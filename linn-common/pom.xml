@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.limyel</groupId>
-        <artifactId>mysystem</artifactId>
+        <artifactId>linn</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>mysystem-common</artifactId>
+    <artifactId>linn-common</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>common-core-starter</module>

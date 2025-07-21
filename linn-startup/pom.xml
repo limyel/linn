@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.limyel</groupId>
-        <artifactId>mysystem</artifactId>
+        <artifactId>linn</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>mysystem-modules</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>linn-startup</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

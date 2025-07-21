@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.limyel</groupId>
-    <artifactId>mysystem</artifactId>
+    <artifactId>linn</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
     <modules>
-        <module>mysystem-dependency</module>
-        <module>mysystem-common</module>
-        <module>mysystem-modules</module>
-        <module>mysystem-startup</module>
+        <module>linn-dependency</module>
+        <module>linn-common</module>
+        <module>linn-modules</module>
+        <module>linn-startup</module>
     </modules>
 
     <properties>
