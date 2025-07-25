@@ -1,5 +1,7 @@
 package com.limyel.linn.common.core.constant;
 
+import com.limyel.linn.common.core.enhancer.exception.ErrorCode;
+
 public interface LinnConstant {
 
     String ERROR_DATA = "ERROR_DATA";

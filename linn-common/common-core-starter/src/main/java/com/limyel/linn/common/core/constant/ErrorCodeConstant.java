@@ -1,9 +1,9 @@
-package com.limyel.linn.common.core.enhancer.exception;
+package com.limyel.linn.common.core.constant;
 
-/**
- * 全局错误码
- */
-public interface GlobalErrorCode {
+import com.limyel.linn.common.core.enhancer.exception.ErrorCode;
+
+public interface ErrorCodeConstant {
+
     ErrorCode SUCCESS = new ErrorCode(0, "成功");
 
     ErrorCode INTERNAL_ERROR = new ErrorCode(500, "系统内部错误，请联系管理员");
