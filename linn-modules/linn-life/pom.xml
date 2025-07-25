@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.limyel</groupId>
-        <artifactId>linn</artifactId>
+        <artifactId>linn-modules</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-modules</artifactId>
+    <artifactId>linn-life</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>linn-life</module>
-        <module>linn-wiki</module>
+        <module>linn-life-biz</module>
+        <module>linn-life-api</module>
     </modules>
 
     <properties>
