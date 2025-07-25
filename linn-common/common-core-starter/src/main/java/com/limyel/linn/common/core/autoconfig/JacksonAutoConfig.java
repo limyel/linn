@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.limyel.linn.common.core.utils.json.LocalDateTimeModule;
 import com.limyel.linn.common.core.utils.local.DateFormatUtils;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration;
@@ -47,7 +48,7 @@ public class JacksonAutoConfig {
         // 反序列化时，属性不存在的兼容处理
         objectMapper.getDeserializationConfig().withoutFeatures(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         // 日期格式化
-        objectMapper.registerModule(new JavaTimeModule());
+        objectMapper.registerModule(new LocalDateTimeModule());
         objectMapper.findAndRegisterModules();
 
         return objectMapper;

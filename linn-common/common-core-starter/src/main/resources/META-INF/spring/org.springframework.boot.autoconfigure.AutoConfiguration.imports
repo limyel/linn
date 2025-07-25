@@ -1,3 +1,4 @@
 com.limyel.linn.common.core.autoconfig.DefaultEnvironmentPostProcessor
 com.limyel.linn.common.core.autoconfig.JacksonAutoConfig
 com.limyel.linn.common.core.autoconfig.ExceptionHandlerAutoConfig
+com.limyel.linn.common.core.autoconfig.WebAutoConfig
