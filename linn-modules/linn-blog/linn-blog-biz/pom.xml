@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.limyel</groupId>
-        <artifactId>linn-life</artifactId>
-        <version>0.0.1</version>
+        <artifactId>linn-blog</artifactId>
+        <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-life-api</artifactId>
+    <artifactId>linn-blog-biz</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -17,5 +17,12 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.limyel</groupId>
+            <artifactId>common-core-starter</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

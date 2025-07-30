@@ -1,5 +1,6 @@
 package com.limyel.linn.common.core.enhancer.exception;
 
+import com.limyel.linn.common.core.constant.ErrorCodeConstant;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -18,7 +19,7 @@ public class BizException extends RuntimeException {
     }
 
     public BizException(String msg) {
-        this(GlobalErrorCode.INTERNAL_ERROR.getCode(), msg);
+        this(ErrorCodeConstant.INTERNAL_ERROR.getCode(), msg);
     }
 
     public BizException(ErrorCode errorCode) {

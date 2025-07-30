@@ -20,6 +20,7 @@
         <spring-cloud-alibaba.version>2021.0.6.0</spring-cloud-alibaba.version>
 
         <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <knife4j.version>4.5.0</knife4j.version>
     </properties>
 
     <dependencyManagement>
@@ -53,6 +54,12 @@
                 <version>${mapstruct.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
             <!-- linn-common -->
             <dependency>
                 <groupId>com.limyel</groupId>
@@ -63,12 +70,12 @@
             <!-- linn-modules -->
             <dependency>
                 <groupId>com.limyel</groupId>
-                <artifactId>linn-life-biz</artifactId>
+                <artifactId>linn-blog-biz</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
                 <groupId>com.limyel</groupId>
-                <artifactId>linn-life-api</artifactId>
+                <artifactId>linn-blog</artifactId>
                 <version>${revision}</version>
             </dependency>
         </dependencies>

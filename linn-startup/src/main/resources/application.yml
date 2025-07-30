@@ -4,7 +4,7 @@ server:
     threads:
       max: 1000
       min-spare: 30
-  port: 8080
+  port: 8000
   servlet:
     session:
       cookie:
@@ -15,7 +15,8 @@ spring:
   application:
     name: linn
   profiles:
-    active: @profileActive@
+#    active: @profileActive@
+    active: dev
   messages:
     encoding: UTF-8
     basename: i18n/message

@@ -5,16 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.limyel</groupId>
-        <artifactId>linn-modules</artifactId>
+        <artifactId>linn-blog</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-life</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>linn-life-biz</module>
-        <module>linn-life-api</module>
-    </modules>
+    <artifactId>linn-blog-api</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

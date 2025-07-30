@@ -12,8 +12,8 @@
     <artifactId>linn-modules</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>linn-life</module>
         <module>linn-wiki</module>
+        <module>linn-blog</module>
     </modules>
 
     <properties>

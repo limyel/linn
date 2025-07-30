@@ -18,11 +18,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @Slf4j
 @ControllerAdvice
-public class GlobalExceptionHandler {
+public class LinnExceptionHandler {
 
     @ExceptionHandler(BizException.class)
     @ResponseBody

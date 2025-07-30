@@ -21,7 +21,7 @@
     <dependencies>
         <dependency>
             <groupId>com.limyel</groupId>
-            <artifactId>linn-life-biz</artifactId>
+            <artifactId>linn-blog-biz</artifactId>
         </dependency>
     </dependencies>
 
