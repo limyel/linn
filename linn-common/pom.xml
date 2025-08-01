@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>common-core-starter</module>
+        <module>common-mybatis-starter</module>
     </modules>
 
     <properties>
