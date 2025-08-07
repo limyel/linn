@@ -1,5 +1,5 @@
-com.limyel.linn.common.core.autoconfig.DefaultEnvironmentPostProcessor
-com.limyel.linn.common.core.autoconfig.JacksonAutoConfig
-com.limyel.linn.common.core.autoconfig.ExceptionHandlerAutoConfig
-com.limyel.linn.common.core.autoconfig.WebAutoConfig
-com.limyel.linn.common.core.autoconfig.Knife4jAutoConfig
+linn.linn.common.core.autoconfig.DefaultEnvironmentPostProcessor
+linn.linn.common.core.autoconfig.JacksonAutoConfig
+linn.linn.common.core.autoconfig.ExceptionHandlerAutoConfig
+linn.linn.common.core.autoconfig.WebAutoConfig
+linn.linn.common.core.autoconfig.Knife4jAutoConfig

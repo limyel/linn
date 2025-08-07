@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.limyel</groupId>
+    <groupId>linn</groupId>
     <artifactId>linn-dependency</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
@@ -25,6 +25,7 @@
         <mybatis-plus.version>3.5.12</mybatis-plus.version>
         <mysql.version>8.4.0</mysql.version>
         <flyway.version>11.10.5</flyway.version>
+        <p6spy.version>3.9.1</p6spy.version>
     </properties>
 
     <dependencyManagement>
@@ -82,25 +83,40 @@
             </dependency>
             <dependency>
                 <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-mysql</artifactId>
+                <version>${flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-core</artifactId>
                 <version>${flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>p6spy</groupId>
+                <artifactId>p6spy</artifactId>
+                <version>${p6spy.version}</version>
             </dependency>
 
             <!-- linn-common -->
             <dependency>
-                <groupId>com.limyel</groupId>
+                <groupId>linn</groupId>
                 <artifactId>common-core-starter</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>linn</groupId>
+                <artifactId>common-mybatis-starter</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <!-- linn-modules -->
             <dependency>
-                <groupId>com.limyel</groupId>
+                <groupId>linn</groupId>
                 <artifactId>linn-blog-biz</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.limyel</groupId>
+                <groupId>linn</groupId>
                 <artifactId>linn-blog</artifactId>
                 <version>${revision}</version>
             </dependency>

@@ -38,9 +38,9 @@ feign:
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
-  mapperPackage: com.limyel.linn.*.dao
+  mapperPackage: com.linn.*.mapper
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.limyel.linn.*.model.entity
+  typeAliasesPackage: com.linn.*.dataobject
   global-config:
     #数据库相关配置
     db-config:

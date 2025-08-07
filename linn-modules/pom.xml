@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.limyel</groupId>
+        <groupId>linn</groupId>
         <artifactId>linn</artifactId>
         <version>${revision}</version>
     </parent>
@@ -14,6 +14,7 @@
     <modules>
         <module>linn-wiki</module>
         <module>linn-blog</module>
+        <module>linn-member</module>
     </modules>
 
     <properties>
@@ -21,5 +22,17 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>linn</groupId>
+            <artifactId>common-core-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>linn</groupId>
+            <artifactId>common-mybatis-starter</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
