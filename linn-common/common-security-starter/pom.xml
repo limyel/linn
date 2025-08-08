@@ -4,18 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>linn</groupId>
-        <artifactId>linn</artifactId>
+        <groupId>com</groupId>
+        <artifactId>linn-common</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-security</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>linn-security-api</module>
-        <module>linn-spring-security-starter</module>
-        <module>linn-security-starter</module>
-    </modules>
+    <artifactId>common-security-starter</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
