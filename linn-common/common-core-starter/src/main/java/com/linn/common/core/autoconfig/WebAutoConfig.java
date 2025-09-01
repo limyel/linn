@@ -1,6 +1,7 @@
 package com.linn.common.core.autoconfig;
 
 import com.linn.common.core.enhancer.web.AutoPrefixUrlMapping;
+import com.linn.common.core.enhancer.web.CommonResponseDataAdvice;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcRegistrations;
 import org.springframework.context.annotation.Bean;
@@ -43,4 +44,8 @@ public class WebAutoConfig implements WebMvcRegistrations {
         return new AutoPrefixUrlMapping();
     }
 
+    @Bean
+    public CommonResponseDataAdvice commonResponseDataAdvice() {
+        return new CommonResponseDataAdvice();
+    }
 }
