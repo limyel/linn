@@ -5,6 +5,7 @@ import com.linn.common.core.constant.LinnConstant;
 import com.linn.common.core.pojo.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.CollectionUtils;
+import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -30,9 +31,9 @@ public class LinnExceptionHandler {
         return R.fail(e.getCode(), e.getMessage());
     }
 
-    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ExceptionHandler(BindException.class)
     @ResponseBody
-    public R<?> handleMethodArgumentNotValidException(HttpServletRequest request, MethodArgumentNotValidException e) {
+    public R<?> handleBindException(HttpServletRequest request, BindException e) {
         BindingResult bindingResult = e.getBindingResult();
 
         StringBuilder sb = new StringBuilder();
@@ -51,7 +52,7 @@ public class LinnExceptionHandler {
 
         String errMsg = sb.toString();
 
-        log.error("{} request failed, error code: {}, error msg: {}", request.getRequestURI(), ErrorCodeConstant.BAD_REQUEST.getCode(), errMsg);
+        log.error("{} 请求失败, error code: {}, error msg: {}", request.getRequestURI(), ErrorCodeConstant.BAD_REQUEST.getCode(), errMsg);
 
         return R.fail(ErrorCodeConstant.BAD_REQUEST.getCode(), errMsg);
     }
