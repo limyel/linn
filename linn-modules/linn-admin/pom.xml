@@ -5,24 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.lyxh</groupId>
-        <artifactId>linn-blog</artifactId>
+        <artifactId>linn-modules</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-blog-biz</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>linn-admin</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>linn-admin-biz</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.lyxh</groupId>
-            <artifactId>common-core-starter</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

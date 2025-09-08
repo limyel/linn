@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com</groupId>
+        <groupId>com.lyxh</groupId>
         <artifactId>linn</artifactId>
         <version>${revision}</version>
     </parent>
@@ -15,6 +15,7 @@
         <module>linn-wiki</module>
         <module>linn-blog</module>
         <module>linn-member</module>
+        <module>linn-admin</module>
     </modules>
 
     <properties>
@@ -25,12 +26,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>com</groupId>
+            <groupId>com.lyxh</groupId>
             <artifactId>common-core-starter</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com</groupId>
+            <groupId>com.lyxh</groupId>
             <artifactId>common-mybatis-starter</artifactId>
         </dependency>
     </dependencies>
