@@ -7,10 +7,10 @@ import java.lang.annotation.*;
 @Documented
 public @interface ApiOperationLog {
 
-    /**
-     * 功能描述
-     * @return
-     */
-    String desc() default "";
+    String module();
+
+    String title();
+
+    String type();
 
 }

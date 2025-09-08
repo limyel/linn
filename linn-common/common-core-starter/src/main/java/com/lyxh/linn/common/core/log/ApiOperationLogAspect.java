@@ -42,11 +42,11 @@ public class ApiOperationLogAspect {
             String argsJsonStr = Arrays.stream(args).map(JsonUtil::toJsonStr).collect(Collectors.joining(", "));
 
             // 功能描述信息
-            String description = getApiOperationLogDescription(joinPoint);
+            ApiOperationLog apiOperationLog = getApiOperationLog(joinPoint);
 
             // 打印请求相关参数
-            log.info("====== 请求开始: [{}], 入参: {}, 请求类: {}, 请求方法: {} =================================== ",
-                    description, argsJsonStr, className, methodName);
+            log.info("====== 请求开始: [{}-{}-{}], 入参: {}, 请求类: {}, 请求方法: {} =================================== ",
+                    apiOperationLog.module(), apiOperationLog.type(), apiOperationLog.title(), argsJsonStr, className, methodName);
 
             // 执行切点方法
             Object result = joinPoint.proceed();
@@ -55,8 +55,8 @@ public class ApiOperationLogAspect {
             long executionTime = System.currentTimeMillis() - startTime;
 
             // 打印出参等相关信息
-            log.info("====== 请求结束: [{}], 耗时: {}ms, 出参: {} =================================== ",
-                    description, executionTime, JsonUtil.toJsonStr(result));
+            log.info("====== 请求结束: [{}-{}-{}], 耗时: {}ms, 出参: {} =================================== ",
+                    apiOperationLog.module(), apiOperationLog.type(), apiOperationLog.title(), executionTime, JsonUtil.toJsonStr(result));
 
             return result;
         } finally {
@@ -70,7 +70,7 @@ public class ApiOperationLogAspect {
      * @param joinPoint
      * @return
      */
-    private String getApiOperationLogDescription(ProceedingJoinPoint joinPoint) {
+    private ApiOperationLog getApiOperationLog(ProceedingJoinPoint joinPoint) {
         // 1. 从 ProceedingJoinPoint 获取 MethodSignature
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
 
@@ -78,10 +78,7 @@ public class ApiOperationLogAspect {
         Method method = signature.getMethod();
 
         // 3. 从 Method 中提取 LogExecution 注解
-        ApiOperationLog apiOperationLog = method.getAnnotation(ApiOperationLog.class);
-
-        // 4. 从 LogExecution 注解中获取 description 属性
-        return apiOperationLog.desc();
+        return method.getAnnotation(ApiOperationLog.class);
     }
 
 }
