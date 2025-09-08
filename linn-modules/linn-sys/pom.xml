@@ -9,10 +9,10 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-admin</artifactId>
+    <artifactId>linn-sys</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>linn-admin-biz</module>
+        <module>linn-sys-biz</module>
     </modules>
 
     <properties>

@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.lyxh</groupId>
-        <artifactId>linn-admin</artifactId>
+        <artifactId>linn-sys</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-admin-biz</artifactId>
+    <artifactId>linn-sys-biz</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

@@ -15,7 +15,7 @@
         <module>linn-wiki</module>
         <module>linn-blog</module>
         <module>linn-member</module>
-        <module>linn-admin</module>
+        <module>linn-sys</module>
     </modules>
 
     <properties>
