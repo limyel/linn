@@ -16,6 +16,7 @@
         <module>linn-blog</module>
         <module>linn-member</module>
         <module>linn-sys</module>
+        <module>linn-security</module>
     </modules>
 
     <properties>

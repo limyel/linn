@@ -9,12 +9,8 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-sys</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>linn-sys-biz</module>
-        <module>linn-sys-api</module>
-    </modules>
+    <artifactId>linn-security</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
