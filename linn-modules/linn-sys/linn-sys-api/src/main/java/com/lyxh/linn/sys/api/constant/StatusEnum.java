@@ -1,4 +1,4 @@
-package com.lyxh.linn.sys.api.constant;
+package com.haoyuan.linn.sys.api.constant;
 
 import com.baomidou.mybatisplus.annotation.EnumValue;
 import com.baomidou.mybatisplus.annotation.IEnum;

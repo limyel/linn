@@ -1,9 +1,9 @@
-package com.lyxh.linn.common.mybatis.autoconfig;
+package com.haoyuan.linn.common.mybatis.autoconfig;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
-import com.lyxh.linn.common.mybatis.enhancer.DefaultFieldHandler;
+import com.haoyuan.linn.common.mybatis.enhancer.DefaultFieldHandler;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 

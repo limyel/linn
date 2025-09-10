@@ -1,7 +1,7 @@
-package com.lyxh.linn.sys.aspect;
+package com.haoyuan.linn.sys.aspect;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lyxh.linn.sys.service.OperationLogService;
+import com.haoyuan.linn.sys.service.OperationLogService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -26,7 +26,7 @@ public class OperationLogAspect {
     @Autowired
     private OperationLogService operationLogService;
 
-    @Pointcut("@annotation(com.lyxh.linn.common.core.log.ApiOperationLog)")
+    @Pointcut("@annotation(com.haoyuan.linn.common.core.log.ApiOperationLog)")
     public void pointcut() {
     }
 

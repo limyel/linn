@@ -1,4 +1,4 @@
-package com.lyxh.linn.common.core.constant;
+package com.haoyuan.linn.common.core.constant;
 
 public interface LinnConstant {
 

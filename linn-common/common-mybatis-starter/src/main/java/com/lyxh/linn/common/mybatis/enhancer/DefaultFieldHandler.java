@@ -1,7 +1,7 @@
-package com.lyxh.linn.common.mybatis.enhancer;
+package com.haoyuan.linn.common.mybatis.enhancer;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
-import com.lyxh.linn.common.mybatis.pojo.BaseDO;
+import com.haoyuan.linn.common.mybatis.pojo.BaseDO;
 import org.apache.ibatis.reflection.MetaObject;
 
 import java.time.LocalDateTime;

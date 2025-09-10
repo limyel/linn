@@ -1,4 +1,4 @@
-package com.lyxh.linn.common.core.autoconfig;
+package com.haoyuan.linn.common.core.autoconfig;
 
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;

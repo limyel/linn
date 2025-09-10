@@ -1,8 +1,8 @@
-package com.lyxh.linn.common.core.enhancer.exception;
+package com.haoyuan.linn.common.core.enhancer.exception;
 
-import com.lyxh.linn.common.core.constant.ErrorCodeConstant;
-import com.lyxh.linn.common.core.constant.LinnConstant;
-import com.lyxh.linn.common.core.pojo.R;
+import com.haoyuan.linn.common.core.constant.ErrorCodeConstant;
+import com.haoyuan.linn.common.core.constant.LinnConstant;
+import com.haoyuan.linn.common.core.pojo.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.CollectionUtils;
 import org.springframework.validation.BindException;

@@ -1,7 +1,7 @@
-package com.lyxh.linn.common.core.enhancer.web;
+package com.haoyuan.linn.common.core.enhancer.web;
 
-import com.lyxh.linn.common.core.constant.LinnConstant;
-import com.lyxh.linn.common.core.pojo.R;
+import com.haoyuan.linn.common.core.constant.LinnConstant;
+import com.haoyuan.linn.common.core.pojo.R;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 

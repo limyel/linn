@@ -1,6 +1,6 @@
-package com.lyxh.linn.common.core.constant;
+package com.haoyuan.linn.common.core.constant;
 
-import com.lyxh.linn.common.core.enhancer.exception.ErrorCode;
+import com.haoyuan.linn.common.core.enhancer.exception.ErrorCode;
 
 public interface ErrorCodeConstant {
 

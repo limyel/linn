@@ -1,4 +1,4 @@
-package com.lyxh.linn.common.core.log;
+package com.haoyuan.linn.common.core.log;
 
 import java.lang.annotation.*;
 

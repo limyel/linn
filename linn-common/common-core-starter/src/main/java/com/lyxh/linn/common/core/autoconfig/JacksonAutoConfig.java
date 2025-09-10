@@ -1,12 +1,12 @@
-package com.lyxh.linn.common.core.autoconfig;
+package com.haoyuan.linn.common.core.autoconfig;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.json.JsonReadFeature;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.lyxh.linn.common.core.utils.json.LocalDateTimeModule;
-import com.lyxh.linn.common.core.utils.local.DateFormatUtils;
+import com.haoyuan.linn.common.core.utils.json.LocalDateTimeModule;
+import com.haoyuan.linn.common.core.utils.local.DateFormatUtils;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration;
 import org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;

@@ -1,7 +1,7 @@
-package com.lyxh.linn.common.core.autoconfig;
+package com.haoyuan.linn.common.core.autoconfig;
 
-import com.lyxh.linn.common.core.enhancer.web.AutoPrefixUrlMapping;
-import com.lyxh.linn.common.core.enhancer.web.CommonResponseDataAdvice;
+import com.haoyuan.linn.common.core.enhancer.web.AutoPrefixUrlMapping;
+import com.haoyuan.linn.common.core.enhancer.web.CommonResponseDataAdvice;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcRegistrations;
 import org.springframework.context.annotation.Bean;

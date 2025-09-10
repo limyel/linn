@@ -1,4 +1,4 @@
-package com.lyxh.linn.common.core.enhancer.web.annotation;
+package com.haoyuan.linn.common.core.enhancer.web.annotation;
 
 import org.springframework.web.bind.annotation.RestController;
 

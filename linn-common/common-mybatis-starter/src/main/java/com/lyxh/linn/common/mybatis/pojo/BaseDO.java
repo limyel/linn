@@ -1,4 +1,4 @@
-package com.lyxh.linn.common.mybatis.pojo;
+package com.haoyuan.linn.common.mybatis.pojo;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;

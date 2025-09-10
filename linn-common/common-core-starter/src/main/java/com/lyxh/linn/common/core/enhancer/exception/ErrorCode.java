@@ -1,4 +1,4 @@
-package com.lyxh.linn.common.core.enhancer.exception;
+package com.haoyuan.linn.common.core.enhancer.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

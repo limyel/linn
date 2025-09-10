@@ -1,4 +1,4 @@
-package com.lyxh.linn.sys.api.constant;
+package com.haoyuan.linn.sys.api.constant;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

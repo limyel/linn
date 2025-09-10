@@ -1,4 +1,4 @@
-package com.lyxh.linn.common.core.utils.bean;
+package com.haoyuan.linn.common.core.utils.bean;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;

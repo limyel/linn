@@ -1,8 +1,8 @@
-package com.lyxh.linn.sys.mapper;
+package com.haoyuan.linn.sys.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lyxh.linn.sys.dataobject.MenuDO;
-import com.lyxh.linn.sys.dataobject.OperationLogDO;
+import com.haoyuan.linn.sys.dataobject.MenuDO;
+import com.haoyuan.linn.sys.dataobject.OperationLogDO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

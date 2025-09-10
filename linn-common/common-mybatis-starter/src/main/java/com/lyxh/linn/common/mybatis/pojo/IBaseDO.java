@@ -1,4 +1,4 @@
-package com.lyxh.linn.common.mybatis.pojo;
+package com.haoyuan.linn.common.mybatis.pojo;
 
 public interface IBaseDO {
     Long getId();

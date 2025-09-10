@@ -1,4 +1,4 @@
-package com.lyxh.linn.sys.dto.operationlog;
+package com.haoyuan.linn.sys.dto.operationlog;
 
 import lombok.Data;
 

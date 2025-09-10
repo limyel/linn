@@ -1,6 +1,6 @@
-package com.lyxh.linn.common.core.enhancer.exception;
+package com.haoyuan.linn.common.core.enhancer.exception;
 
-import com.lyxh.linn.common.core.constant.ErrorCodeConstant;
+import com.haoyuan.linn.common.core.constant.ErrorCodeConstant;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

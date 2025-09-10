@@ -1,7 +1,7 @@
-package com.lyxh.linn.common.core.enhancer.web;
+package com.haoyuan.linn.common.core.enhancer.web;
 
-import com.lyxh.linn.common.core.enhancer.web.annotation.CosmoController;
-import com.lyxh.linn.common.core.pojo.R;
+import com.haoyuan.linn.common.core.enhancer.web.annotation.CosmoController;
+import com.haoyuan.linn.common.core.pojo.R;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;

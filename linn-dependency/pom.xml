@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lyxh</groupId>
+    <groupId>com.haoyuan</groupId>
     <artifactId>linn-dependency</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
@@ -92,34 +92,34 @@
 
             <!-- linn-common -->
             <dependency>
-                <groupId>com.lyxh</groupId>
+                <groupId>com.haoyuan</groupId>
                 <artifactId>common-core-starter</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.lyxh</groupId>
+                <groupId>com.haoyuan</groupId>
                 <artifactId>common-mybatis-starter</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <!-- linn-modules -->
             <dependency>
-                <groupId>com.lyxh</groupId>
+                <groupId>com.haoyuan</groupId>
                 <artifactId>linn-sys-biz</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.lyxh</groupId>
+                <groupId>com.haoyuan</groupId>
                 <artifactId>linn-sys-api</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.lyxh</groupId>
+                <groupId>com.haoyuan</groupId>
                 <artifactId>linn-blog-biz</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.lyxh</groupId>
+                <groupId>com.haoyuan</groupId>
                 <artifactId>linn-blog</artifactId>
                 <version>${revision}</version>
             </dependency>

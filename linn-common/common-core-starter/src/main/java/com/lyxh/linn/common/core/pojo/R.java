@@ -1,6 +1,6 @@
-package com.lyxh.linn.common.core.pojo;
+package com.haoyuan.linn.common.core.pojo;
 
-import com.lyxh.linn.common.core.constant.ErrorCodeConstant;
+import com.haoyuan.linn.common.core.constant.ErrorCodeConstant;
 import lombok.Data;
 
 import java.io.Serial;
