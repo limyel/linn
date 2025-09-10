@@ -7,4 +7,6 @@ public interface LinnConstant {
     String ERROR_TIME = "ERROR_TIME";
 
     String CONTROLLER_PKG = "controller";
+
+    String CURRENT_USER = "current_user";
 }

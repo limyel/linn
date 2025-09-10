@@ -1,4 +1,4 @@
-package com.linn.linn;
+package com.haoyuan.linn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -5,19 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.haoyuan</groupId>
-        <artifactId>linn</artifactId>
+        <artifactId>linn-modules</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>linn-modules</artifactId>
+    <artifactId>linn-tools</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>linn-wiki</module>
-        <module>linn-blog</module>
-        <module>linn-member</module>
-        <module>linn-sys</module>
-        <module>linn-security</module>
-        <module>linn-tools</module>
+        <module>linn-tools-biz</module>
     </modules>
 
     <properties>
@@ -25,17 +20,5 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.haoyuan</groupId>
-            <artifactId>common-core-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.haoyuan</groupId>
-            <artifactId>common-mybatis-starter</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>
