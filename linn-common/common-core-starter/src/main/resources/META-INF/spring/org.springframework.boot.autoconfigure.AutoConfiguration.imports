@@ -1,5 +1,0 @@
-linn.linn.common.core.autoconfig.DefaultEnvironmentPostProcessor
-linn.linn.common.core.autoconfig.JacksonAutoConfig
-linn.linn.common.core.autoconfig.ExceptionHandlerAutoConfig
-linn.linn.common.core.autoconfig.WebAutoConfig
-linn.linn.common.core.autoconfig.Knife4jAutoConfig

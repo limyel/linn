@@ -105,6 +105,16 @@
             <!-- linn-modules -->
             <dependency>
                 <groupId>com.lyxh</groupId>
+                <artifactId>linn-sys-biz</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lyxh</groupId>
+                <artifactId>linn-sys-api</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lyxh</groupId>
                 <artifactId>linn-blog-biz</artifactId>
                 <version>${revision}</version>
             </dependency>
