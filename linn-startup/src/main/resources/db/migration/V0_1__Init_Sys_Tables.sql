@@ -231,3 +231,22 @@ CREATE TABLE `sys_notice`
   AUTO_INCREMENT = 1
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci COMMENT ='通知公告表';
+
+
+DROP TABLE IF EXISTS `sys_user_token`;
+CREATE TABLE `sys_user_token`
+(
+    `id`          bigint                                                        NOT NULL AUTO_INCREMENT COMMENT 'ID',
+    `sys_user_id`     bigint                                                        NOT NULL COMMENT '用户ID',
+    `token`       varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'token',
+    `expire_time` datetime                                                      NOT NULL COMMENT '过期时间',
+    `create_by`   bigint                                                        NULL     DEFAULT NULL COMMENT '创建者',
+    `create_time` datetime                                                      NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `update_by`   bigint                                                        NULL     DEFAULT NULL COMMENT '更新者',
+    `update_time` datetime                                                      NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    `delete_time` datetime                                                               DEFAULT NULL COMMENT '删除时间',
+    PRIMARY KEY (`id`) USING BTREE,
+    UNIQUE KEY `uk_user_id_token` (`user_id`, `token`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_unicode_ci COMMENT ='系统用户 token 表';

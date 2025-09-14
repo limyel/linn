@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableLogic;
 
 import java.time.LocalDateTime;
 
-public abstract class BaseDO implements IBaseDO {
+public abstract class BaseDO {
 
     /**
      * 自增主键
@@ -53,7 +53,6 @@ public abstract class BaseDO implements IBaseDO {
         this.updateBy = updateBy;
     }
 
-    @Override
     public Long getId() {
         return id;
     }
