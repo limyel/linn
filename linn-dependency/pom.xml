@@ -123,6 +123,11 @@
                 <artifactId>linn-blog</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <dependency>
+                <groupId>com.haoyuan</groupId>
+                <artifactId>linn-security</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

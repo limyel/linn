@@ -22,6 +22,11 @@
             <groupId>com.haoyuan</groupId>
             <artifactId>linn-sys-api</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.haoyuan</groupId>
+            <artifactId>linn-security</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

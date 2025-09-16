@@ -9,4 +9,5 @@ public interface LinnConstant {
     String CONTROLLER_PKG = "controller";
 
     String CURRENT_USER = "current_user";
+    String USER_TOKEN = "user_token";
 }
