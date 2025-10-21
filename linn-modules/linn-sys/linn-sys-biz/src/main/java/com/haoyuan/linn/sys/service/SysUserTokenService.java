@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Service
 public class SysUserTokenService {
@@ -26,6 +27,15 @@ public class SysUserTokenService {
         }
 
         return sysUserTokenDO;
+    }
+
+    public String addToken(Long sysUserId) {
+        SysUserTokenDO sysUserTokenDO = new SysUserTokenDO();
+        sysUserTokenDO.setSysUserId(sysUserId);
+        sysUserTokenDO.setToken(UUID.randomUUID().toString());
+        sysUserTokenDO.setExpireTime(LocalDateTime.now().plusHours(3));
+        sysUserTokenMapper.insert(sysUserTokenDO);
+        return sysUserTokenDO.getToken();
     }
 
 }

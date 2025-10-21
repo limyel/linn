@@ -19,9 +19,6 @@ public class SysUserApiImpl implements SysUserApi {
     @Autowired
     private RoleService roleService;
 
-    @Autowired
-    private MenuService menuService;
-
     @Override
     public LoginUser getLoginUser(String token) {
         SysUserDO sysUserDO = sysUserService.getByToken(token);

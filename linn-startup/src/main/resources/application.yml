@@ -9,7 +9,7 @@ server:
     session:
       cookie:
         http-only: true
-    context-path: /linn
+#    context-path: /linn
 
 spring:
   application:

@@ -21,6 +21,11 @@
     <dependencies>
         <dependency>
             <groupId>com.haoyuan</groupId>
+            <artifactId>linn-sys-biz</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.haoyuan</groupId>
             <artifactId>linn-blog-biz</artifactId>
         </dependency>
     </dependencies>

@@ -7,11 +7,8 @@ import com.haoyuan.linn.common.core.pojo.User;
 import com.haoyuan.linn.common.core.utils.thread.ThreadLocalUtils;
 import com.haoyuan.linn.security.annotation.LoginRequired;
 import com.haoyuan.linn.security.service.ISecurityService;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.AnnotationUtils;
-import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -23,7 +20,7 @@ import java.lang.reflect.Method;
 @RequiredArgsConstructor
 public class LoginInterceptor implements HandlerInterceptor {
 
-    private ISecurityService securityService;
+    private final ISecurityService securityService;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

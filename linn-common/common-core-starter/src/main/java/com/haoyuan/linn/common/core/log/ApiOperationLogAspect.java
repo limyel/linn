@@ -1,6 +1,6 @@
 package com.haoyuan.linn.common.core.log;
 
-import com.haoyuan.linn.common.core.utils.json.JsonUtil;
+import com.haoyuan.linn.common.core.utils.json.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @Slf4j
 public class ApiOperationLogAspect {
 
-    @Pointcut("@annotation(com.linn.common.core.log.ApiOperationLog)")
+    @Pointcut("@annotation(com.haoyuan.linn.common.core.log.ApiOperationLog)")
     public void apiOperationLog() {}
 
     @Around("apiOperationLog()")
@@ -39,7 +39,7 @@ public class ApiOperationLogAspect {
             // 请求入参
             Object[] args = joinPoint.getArgs();
             // 入参转 JSON 字符串
-            String argsJsonStr = Arrays.stream(args).map(JsonUtil::toJsonStr).collect(Collectors.joining(", "));
+            String argsJsonStr = Arrays.stream(args).map(JsonUtils::toJson).collect(Collectors.joining(", "));
 
             // 功能描述信息
             ApiOperationLog apiOperationLog = getApiOperationLog(joinPoint);
@@ -56,7 +56,7 @@ public class ApiOperationLogAspect {
 
             // 打印出参等相关信息
             log.info("====== 请求结束: [{}-{}-{}], 耗时: {}ms, 出参: {} =================================== ",
-                    apiOperationLog.module(), apiOperationLog.type(), apiOperationLog.title(), executionTime, JsonUtil.toJsonStr(result));
+                    apiOperationLog.module(), apiOperationLog.type(), apiOperationLog.title(), executionTime, JsonUtils.toJson(result));
 
             return result;
         } finally {
